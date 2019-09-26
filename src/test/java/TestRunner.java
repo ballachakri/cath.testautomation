@@ -5,8 +5,6 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test",
         tags = {"@singlesearch"},
-        plugin = {"json:src/test/cathJSON.json"}
-)
+        plugin = {"json:src/test/cathJSON.json", "html:src/test/reports/cucumberReport.html"})
 public class TestRunner {
-
 }

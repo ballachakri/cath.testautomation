@@ -19,10 +19,9 @@ public class FailedTestScreenShot extends BaseUIPageObject<BaseUIPageObject> {
 
         try {
             FileHandler.copy(screenShot,
-                    new File("C:\\Users\\sball\\git\\cathkidston.testautomation\\src\\test\\failed_test_screenshot\\" + testScenarioName + ".png"));
+                    new File("C:\\Users\\sball\\git\\cathkidston.testautomation\\src\\test\\screenshots\\" + testScenarioName + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-    }
+     }
 }
