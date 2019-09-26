@@ -1,0 +1,8 @@
+# ignoring files to reomte repo
+
+*.git
+*.class
+*.log
+*.json
+*.png
+target/
