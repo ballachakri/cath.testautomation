@@ -5,4 +5,5 @@
 *.log
 *.json
 *.png
+*.gitignore
 target/
