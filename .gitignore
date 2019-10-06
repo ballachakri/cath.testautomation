@@ -6,7 +6,8 @@
 *.json
 *.png
 *.gitignore
+*.txt
 workspace.xml
 target/
-report/
+reports/
 screenshots/

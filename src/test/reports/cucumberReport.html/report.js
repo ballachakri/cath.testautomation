@@ -6,12 +6,6 @@ formatter.feature({
   "tags": [
     {
       "name": "@singlesearch"
-    },
-    {
-      "name": "@doubleSearch"
-    },
-    {
-      "name": "@tripleSearch"
     }
   ]
 });
@@ -85,12 +79,6 @@ formatter.scenario({
   "tags": [
     {
       "name": "@singlesearch"
-    },
-    {
-      "name": "@doubleSearch"
-    },
-    {
-      "name": "@tripleSearch"
     }
   ]
 });
@@ -142,12 +130,6 @@ formatter.scenario({
   "tags": [
     {
       "name": "@singlesearch"
-    },
-    {
-      "name": "@doubleSearch"
-    },
-    {
-      "name": "@tripleSearch"
     }
   ]
 });
@@ -199,12 +181,6 @@ formatter.scenario({
   "tags": [
     {
       "name": "@singlesearch"
-    },
-    {
-      "name": "@doubleSearch"
-    },
-    {
-      "name": "@tripleSearch"
     }
   ]
 });
@@ -256,12 +232,6 @@ formatter.scenario({
   "tags": [
     {
       "name": "@singlesearch"
-    },
-    {
-      "name": "@doubleSearch"
-    },
-    {
-      "name": "@tripleSearch"
     }
   ]
 });
