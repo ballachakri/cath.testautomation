@@ -15,6 +15,6 @@ Examples:
 | product |
 | shirt |
 | bag |
-| skirt |
+
 
 
