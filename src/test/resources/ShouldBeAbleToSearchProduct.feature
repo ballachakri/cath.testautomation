@@ -14,8 +14,7 @@ Then i should be able to view all the relevant products
 Examples:
 | product |
 | shirt |
+| shoe |
 | bag |
 | skirt |
-| shoe |
-
 

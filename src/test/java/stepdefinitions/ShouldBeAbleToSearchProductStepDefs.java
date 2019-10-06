@@ -30,6 +30,6 @@ public class ShouldBeAbleToSearchProductStepDefs {
     @Then("i should be able to view all the relevant products")
     public void i_should_be_able_to_view_all_the_relevant_products() {
          assertThat("Wrong search results are displayed, please investigate",
-             homePage.getSearchResultTitle(), containsString(searchProduct));
+             homePage.getSearchResultTitle() , containsString(searchProduct));
     }
 }

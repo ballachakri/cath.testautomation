@@ -1,6 +1,7 @@
 package PageObjects.HomePage;
 
 import GlobalUtils.BaseUIPageObject;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,27 +19,24 @@ public class HomePage extends BaseUIPageObject<HomePage> {
     @FindBy(css = "#search > fieldset > div > button")
     private WebElement magnifyingGlassIcon;
 
-    @FindBy(css = "p[class='page_summary'] span")
+    @FindBy(css = "p[class='page_summary']")
     private WebElement searchResultsTitle;
 
-    public HomePage searchProduct(final  String product)
-    {
+    public HomePage searchProduct(final String product) {
         WaitUntil.elementToBeVisible(searchTextField);
         searchTextField.sendKeys(product);
         return this;
     }
 
-    public HomePage clickMagnifyingGlassIcon()
-    {
-       new Actions(driver).click(magnifyingGlassIcon).click().build().perform();
-       return this;
+    public HomePage clickMagnifyingGlassIcon() {
+        new Actions(driver).click(magnifyingGlassIcon).click().build().perform();
+        return this;
     }
 
-    public String getSearchResultTitle()
-    {
+    public String getSearchResultTitle() {
         WaitUntil.elementToBeVisible(searchResultsTitle);
-       System.out.println("Searched for    :   "+searchResultsTitle.getText());
-      return searchResultsTitle.getText();
+        String productName = searchResultsTitle.getText().replace("Showing search results for ‘", "").replace("’.", "");
+        return productName;
     }
 
 }
