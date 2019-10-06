@@ -1,4 +1,4 @@
-@singlesearch @doubleSearch @tripleSearch
+@singlesearch
 Feature: TA-101 - User should be able to search a product
 
 As a end User
