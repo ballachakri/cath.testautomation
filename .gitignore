@@ -5,7 +5,6 @@
 *.log
 *.json
 *.png
-*.gitignore
 *.txt
 workspace.xml
 target/
