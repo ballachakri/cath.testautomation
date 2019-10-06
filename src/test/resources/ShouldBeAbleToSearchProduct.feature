@@ -1,4 +1,4 @@
-@singlesearch
+@singlesearch @doubleSearch @tripleSearch
 Feature: TA-101 - User should be able to search a product
 
 As a end User
@@ -14,5 +14,8 @@ Then i should be able to view all the relevant products
 Examples:
 | product |
 | shirt |
+| bag |
+| boots |
+| skirt |
 
 

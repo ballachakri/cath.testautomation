@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cathkidston.testautomation" />
+        <module name="javasampleexamples" />
+        <module name="testautomation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java.sample.examples" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

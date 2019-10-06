@@ -15,18 +15,21 @@ public class SetupHomePage extends BaseUIPageObject<BaseUIPageObject> {
     @FindBy(css = "div[class='cookie_policy_x']")
     private WebElement clickXOfCookieMessage;
 
-    private void clickNoThanksNotificationsButton() {
+    private SetupHomePage clickNoThanksNotificationsButton() {
         WaitUntil.elementToBeClickable(noThanksNotificationButton);
         noThanksNotificationButton.click();
+        return this;
     }
 
-    private void killCookies() {
+    private SetupHomePage killCookies() {
         WaitUntil.elementToBeClickable(clickXOfCookieMessage);
         clickXOfCookieMessage.click();
+        return this;
     }
 
-    public void OpenHome() {
+    public SetupHomePage OpenHome() {
         clickNoThanksNotificationsButton();
         killCookies();
+        return this;
     }
 }
