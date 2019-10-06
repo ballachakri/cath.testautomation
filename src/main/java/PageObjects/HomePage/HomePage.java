@@ -37,7 +37,7 @@ public class HomePage extends BaseUIPageObject<HomePage> {
     public String getSearchResultTitle()
     {
         WaitUntil.elementToBeVisible(searchResultsTitle);
-       System.out.println("Searched for    :"+searchResultsTitle.getText());
+       System.out.println("Searched for    :   "+searchResultsTitle.getText());
       return searchResultsTitle.getText();
     }
 
