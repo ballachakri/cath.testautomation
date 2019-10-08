@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5aa80dc-5d26-4159-901e-77a573de35fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/testautomation_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GlobalUtils/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GlobalUtils/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WaitUntil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WaitUntil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToSearchProductStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToSearchProductStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/reports/cucumberReport.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/cucumberReport.html/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/ShouldBeAbleToSearchProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ShouldBeAbleToSearchProduct.feature" afterDir="false" />
@@ -24,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Substep Feature" />
         <option value="Class" />
       </list>
     </option>

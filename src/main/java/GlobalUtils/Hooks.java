@@ -22,7 +22,6 @@ public class Hooks extends BaseUIPageObject<BaseUIPageObject> {
     @After
     public void closeTheBrowser(Scenario scenario) {
         final String scenarioName = scenario.getName();
-
         if (scenario.isFailed()) {
             new FailedTestScreenShot().getScreenShotOfFailedTest(scenarioName);
         }

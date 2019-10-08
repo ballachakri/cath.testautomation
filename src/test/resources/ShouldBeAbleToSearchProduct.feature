@@ -1,9 +1,9 @@
-@singlesearch
+@sanity
 Feature: TA-101 - User should be able to search a product
 
 As a end User
 I will search for product
-Then i should be able to view all the relavent pordoucts
+Then I should be able to view all the relavent pordoucts
 
 Background:
 Given I am on the home page

@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import GlobalUtils.BaseUIPageObject;
 import GlobalUtils.SetupHomePage;
 import PageObjects.HomePage.HomePage;
 import io.cucumber.java.en.Given;
@@ -10,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 
-public class ShouldBeAbleToSearchProductStepDefs {
+public class ShouldBeAbleToSearchProductStepDefs extends BaseUIPageObject {
     private HomePage homePage;
     private String searchProduct;
 
@@ -22,9 +23,7 @@ public class ShouldBeAbleToSearchProductStepDefs {
     @When("I search for a product {string}")
     public void i_search_for_a_product(String product) {
         searchProduct=product;
-        homePage = new HomePage();
-        homePage.searchProduct(product);
-        homePage.clickMagnifyingGlassIcon();
+        homePage = new HomePage().searchProduct(product).clickMagnifyingGlassIcon();
     }
 
     @Then("i should be able to view all the relevant products")
