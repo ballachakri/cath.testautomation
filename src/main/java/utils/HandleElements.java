@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class HandleElements extends BaseUIPageObject<HandleElements> {
+
     public static void javascriptExecutorClick(WebElement element)
     {
         JavascriptExecutor js=(JavascriptExecutor)driver;

@@ -1,33 +1,16 @@
-package PageObjects.HomePage;
+package PageObjects;
 
 import GlobalUtils.BaseUIPageObject;
-import io.github.bonigarcia.wdm.SeleniumServerStandaloneManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import utils.HandleElements;
 import utils.WaitUntil;
 
 /**
- * Home Page page objects.
+ * Manage account page
+ * Home page > login and register page
  */
-public class HomePage extends BaseUIPageObject<HomePage> {
-
-    @FindBy(css = "input[id='top_search']")
-    private WebElement searchTextField;
-
-    @FindBy(css = "#search > fieldset > div > button")
-    private WebElement magnifyingGlassIcon;
-
-    @FindBy(css = "p[class='page_summary']")
-    private WebElement searchResultsTitle;
-
-    @FindBy(css = "li[class='account_links logged_out']")
-    private WebElement loginRegisterButton;
+public class ManageAccountPage extends BaseUIPageObject<ManageAccountPage> {
 
     @FindBy(css = "input[id='j_username']")
     private WebElement emailIDTextField;
@@ -68,49 +51,25 @@ public class HomePage extends BaseUIPageObject<HomePage> {
     @FindBy(css = "#account > div:nth-child(2) > div.header > dl > dd")
     private WebElement accountEmailTitle;
 
-    public HomePage() {
-        PageFactory.initElements(driver, this);
-    }
 
-    public HomePage searchProduct(final String product) {
-        searchTextField.sendKeys(product);
-        return this;
-    }
 
-    public HomePage clickMagnifyingGlassIcon() {
-        new Actions(driver).click(magnifyingGlassIcon).click().build().perform();
-        return this;
-    }
-
-    public String getSearchResultTitle() {
-
-        String productName = searchResultsTitle.getText().
-                replace("Showing search results for ‘", "").replace("’.", "");
-        return productName;
-    }
-
-    public HomePage clickLoginRegisterButton() {
-        WaitUntil.elementToBeVisible(loginRegisterButton);
-        utils.HandleElements.javascriptExecutorClick(loginRegisterButton);
-        return this;
-    }
-
-    public HomePage enterEmailId(final String emailId) {
+    public ManageAccountPage enterEmailId(final String emailId) {
         emailIDTextField.sendKeys(emailId);
         return this;
     }
 
-    public HomePage selectYesHavePassword() {
+    public ManageAccountPage selectYesHavePassword() {
         utils.HandleElements.javascriptExecutorClick(yesHavePasswordRadioButton);
         return this;
     }
 
-    public HomePage enterPassword(final String password) {
+    public ManageAccountPage enterPassword(final String password) {
+        WaitUntil.elementToBeVisible(passwordTextField);
         passwordTextField.sendKeys(password);
         return this;
     }
 
-    public HomePage clickLogIntoMyAccountButton() {
+    public ManageAccountPage clickLogIntoMyAccountButton() {
         logIntoMyAccountButton.click();
         return this;
     }
@@ -119,39 +78,39 @@ public class HomePage extends BaseUIPageObject<HomePage> {
         return accountEmailTitle.getText();
     }
 
-    public HomePage clickNoPasswordRadioButton() {
+    public ManageAccountPage clickNoPasswordRadioButton() {
         utils.HandleElements.javascriptExecutorClick(noPasswordRadioButton);
         return this;
     }
 
-    public HomePage selectTitle(final String title) {
+    public ManageAccountPage selectTitle(final String title) {
         new Select(titleDropdown).selectByVisibleText(title);
         return this;
     }
 
-    public HomePage enterFirstName(final String firstName) {
+    public ManageAccountPage enterFirstName(final String firstName) {
         WaitUntil.elementToBeVisible(firstNameTextField);
         firstNameTextField.sendKeys(firstName);
         return this;
     }
 
-    public HomePage enterLastName(final String lastName) {
+    public ManageAccountPage enterLastName(final String lastName) {
         lastNameTextFiled.sendKeys(lastName);
         return this;
     }
 
 
-    public HomePage enterPhoneNumber(final String phoneNumber) {
+    public ManageAccountPage enterPhoneNumber(final String phoneNumber) {
         phoneNumberTextFiled.sendKeys(phoneNumber);
         return this;
     }
 
-    public HomePage enterNewPassword(final String password) {
+    public ManageAccountPage enterNewPassword(final String password) {
         newPasswordTextFiled.sendKeys(password);
         return this;
     }
 
-    public HomePage enterConfirmPassword(final String confirmPassword) {
+    public ManageAccountPage enterConfirmPassword(final String confirmPassword) {
         confirmPasswordTextFiled.sendKeys(confirmPassword);
         return this;
     }

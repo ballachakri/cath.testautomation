@@ -2,7 +2,7 @@ package stepdefinitions;
 
 import GlobalUtils.BaseUIPageObject;
 import GlobalUtils.SetupHomePage;
-import PageObjects.HomePage.HomePage;
+import PageObjects.ManageAccountPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,7 +12,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 public class ShouldBeAbleToLoginStepDefs extends BaseUIPageObject {
 
-    private HomePage homePage;
+    private ManageAccountPage manageAccountPage;
     private String emailID;
 
 
@@ -25,12 +25,12 @@ public class ShouldBeAbleToLoginStepDefs extends BaseUIPageObject {
     @When("I enter username {string} and password {string}")
     public void i_enter_username_and_password(final String emailId, final String password) {
         emailID=emailId;
-        homePage=new HomePage().enterEmailId(emailId).selectYesHavePassword().enterPassword(password).clickLogIntoMyAccountButton();
+        manageAccountPage=new ManageAccountPage().enterEmailId(emailId).selectYesHavePassword().enterPassword(password).clickLogIntoMyAccountButton();
     }
 
     @Then("I should be able view my account details")
     public void i_should_be_able_view_my_account_details() {
         assertThat("User is unable to login, please investigate",
-                homePage.getAccountEmailTitle(), equalTo(emailID));
+                manageAccountPage.getAccountEmailTitle(), equalTo(emailID));
     }
 }

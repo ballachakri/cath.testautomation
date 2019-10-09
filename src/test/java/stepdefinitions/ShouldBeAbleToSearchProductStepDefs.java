@@ -2,14 +2,13 @@ package stepdefinitions;
 
 import GlobalUtils.BaseUIPageObject;
 import GlobalUtils.SetupHomePage;
-import PageObjects.HomePage.HomePage;
+import PageObjects.HomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 public class ShouldBeAbleToSearchProductStepDefs extends BaseUIPageObject {
     private HomePage homePage;
