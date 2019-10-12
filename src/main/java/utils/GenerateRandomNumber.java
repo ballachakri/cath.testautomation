@@ -10,8 +10,9 @@ import java.util.Random;
 public class GenerateRandomNumber {
     public static int getRandomNumber(int maxValue) {
         Random random = new Random();
-        int randomNumber=Math.abs(random.nextInt(maxValue));
+        int randomNumber=random.nextInt(maxValue);
 
+        System.out.println("Random Number : "+ randomNumber);
          if(randomNumber<=0 && randomNumber>=maxValue) {
              return 1;
          }

@@ -32,10 +32,10 @@ public class ShouldBeAbleToSearchProductRandomlyAndAddToBasket extends BaseUIPag
         final int maxProducts=searchPage.getTotalProductsDisplayed();
         final int randomNumber=GenerateRandomNumber.getRandomNumber(maxProducts);
 
-        System.out.println(" selected product index is   : "+randomNumber);
+        System.out.println("Selected product number is: "+randomNumber);
 
         selectedProduct=searchPage.selectRandomProduct(randomNumber);
-
+        System.out.println("Selected product is : "+selectedProduct);
         new Cath_Kidston().addToBag().viewBasket();
     }
     @Then("i should be able to view the selected product in the shopping basket")
