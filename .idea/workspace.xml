@@ -7,15 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5aa80dc-5d26-4159-901e-77a573de35fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ManageAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage/ManageAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HandleElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/HandleElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToLoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToLoginStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToSearchProductStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToSearchProductStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToSearchProductRandomlyAndAddToBasket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ShouldBeAbleToSearchProductRandomlyAndAddToBasket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/reports/cucumberReport.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/cucumberReport.html/report.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

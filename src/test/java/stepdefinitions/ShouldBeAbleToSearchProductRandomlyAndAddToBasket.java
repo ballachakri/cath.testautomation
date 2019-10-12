@@ -29,9 +29,12 @@ public class ShouldBeAbleToSearchProductRandomlyAndAddToBasket extends BaseUIPag
 
         searchPage=new SearchPage();
 
-        int maxProducts=searchPage.getTotalProductsDisplayed();
+        final int maxProducts=searchPage.getTotalProductsDisplayed();
+        final int randomNumber=GenerateRandomNumber.getRandomNumber(maxProducts);
 
-        selectedProduct=searchPage.selectRandomProduct(GenerateRandomNumber.getRandomNumber(maxProducts));
+        System.out.println(" selected product index is   : "+randomNumber);
+
+        selectedProduct=searchPage.selectRandomProduct(randomNumber);
 
         new Cath_Kidston().addToBag().viewBasket();
     }
