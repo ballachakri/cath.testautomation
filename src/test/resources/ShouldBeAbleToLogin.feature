@@ -1,4 +1,4 @@
-@sanity
+
 Feature: TA-201 User should be able to login
     As a end user
     I enter user name and password

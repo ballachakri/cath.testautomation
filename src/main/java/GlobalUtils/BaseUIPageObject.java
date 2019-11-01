@@ -5,10 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 
 /**
- * The Base UI Page Object switch the browsers.
+ * The Base UI Page Object to switch the browsers.
  */
 
 public class BaseUIPageObject<H extends BaseUIPageObject> {
@@ -31,13 +32,13 @@ public class BaseUIPageObject<H extends BaseUIPageObject> {
             }
             case "edge": {
                 WebDriverManager.edgedriver().setup();
-                driver = new ChromeDriver();
+                driver = new EdgeDriver();
                 driver.get(testEnvironment);
                 break;
             }
             case "ie": {
                 WebDriverManager.iedriver().setup();
-                new ChromeDriver();
+                driver=new InternetExplorerDriver();
                 driver.get(testEnvironment);
                 break;
             }
